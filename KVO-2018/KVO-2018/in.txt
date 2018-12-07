@@ -1,0 +1,38 @@
+STANDART;
+num function sum(num a,num b,num c)
+{
+init num result;
+result = a+b+c;
+write (result);
+back result;
+}
+
+glavn
+{
+init num first;
+init str message;
+init num second;
+init num k=3;
+init str s="str";
+init double d;
+d=144.8;
+init double o;
+init num rez;
+first=4;
+second=2;
+message="Hello World";
+init str stroka = "Привет";
+init num q=strlen(message);
+init str sb;
+sb=substr(message,1,2);
+rez=sum(k,first,second);
+o=stepen(second,first);
+write(o);
+write(message);
+write(rez);
+write(k);
+write(s);
+write(first);
+
+back 0;
+}
