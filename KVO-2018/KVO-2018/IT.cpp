@@ -56,7 +56,7 @@ namespace IT
 	{
 		if (idtable.table[indTI].iddatatype == DBL)
 		{
-			double tempDbl= strtod(token,'\0');
+			double tempDbl= strtod(token,'\0');			
 			
 			if (tempDbl > DOUBLE_MAXSIZE)
 			{
@@ -89,7 +89,7 @@ namespace IT
 				if (tempInt < INT_MINUS_MAXSIZE)
 					throw ERROR_THROW(6);
 			}
-			idtable.table[indTI].value.vint = tempInt;
+			//idtable.table[indTI].value.vint = tempInt;
 			
 		}
 	}

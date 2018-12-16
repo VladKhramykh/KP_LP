@@ -2,7 +2,7 @@ STANDART;
 num function sum(num a,num b,num c)
 {
 init num result;
-result = a+b+c;
+result = (a+b)*c*b;
 write (result);
 back result;
 }
@@ -24,9 +24,14 @@ message="Hello World";
 init str stroka = "Привет";
 init num q=strlen(message);
 init str sb;
+k=first+second;
 sb=substr(message,1,2);
 rez=sum(k,first,second);
 o=stepen(second,first);
+if(k ne 14)
+{
+write("k ne ravno 14");
+}
 write(o);
 write(message);
 write(rez);

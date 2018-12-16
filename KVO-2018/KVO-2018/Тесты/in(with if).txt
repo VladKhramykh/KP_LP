@@ -1,0 +1,33 @@
+STANDART;
+glavn
+{
+init num first;
+init str message;
+init num second;
+init num k=3;
+init str s="str";
+init double d;
+d=144.8;
+init double o;
+init num rez;
+first=4;
+if(first)
+{
+write(s);
+}
+second=2;
+message="Hello World";
+init str stroka = "Привет";
+init num q=strlen(message);
+init str sb;
+sb=substr(message,1,2);
+o=stepen(second,first);
+write(o);
+write(message);
+write(rez);
+write(k);
+write(s);
+write(first);
+
+back 0;
+}

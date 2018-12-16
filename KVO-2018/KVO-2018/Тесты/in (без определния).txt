@@ -1,0 +1,21 @@
+STANDART;
+num function sum(num a,num b,num c)
+{
+init num result;
+result = (a+b)*c*b;
+write (result);
+back result;
+}
+
+glavn
+{
+init num first;
+init str message;
+init num second;
+message = "Привет мамукас";
+
+first = length(message);
+write(third);
+
+back 0;
+}

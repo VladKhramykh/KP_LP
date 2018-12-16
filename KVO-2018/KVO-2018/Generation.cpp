@@ -2,7 +2,7 @@
 #include "Generation.h"
 
 
-ofstream outfile("GenJava.txt");
+ofstream outfile("Java_KP\\src\\GenJava.java");
 bool isFunction = false;
 bool isMain = false;
 int idFunc;
@@ -52,6 +52,20 @@ void Generation(LT::LexTable &Lextable, In::StToken *tokens, IT::IdTable &idtabl
 				tmp = "double ";
 			outfile << "static " << tmp << idtable.table[buf].id;
 			i++;
+			break;
+		}
+		case LEX_IF:
+		{
+			outfile << "if("<<tokens[i+2].token;
+			if(!strcmp(tokens[i + 3].token, LEX_TYPE_NOT_EQUALS))
+				outfile<< " != ";
+			if (!strcmp(tokens[i + 3].token, LEX_TYPE_EQUALS))
+				outfile << " == ";
+
+			outfile << tokens[i + 4].token;
+			i += 4;
+
+
 			break;
 		}
 		case LEX_LEFTBRACE:

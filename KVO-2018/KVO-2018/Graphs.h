@@ -46,6 +46,16 @@
 	FST::NODE(1,FST::RELATION('/',1)), \
 	FST::NODE()
 
+#define GRAPH_NOT_EQUALS 3, \
+	FST::NODE(1,FST::RELATION('n',1)), \
+	FST::NODE(1,FST::RELATION('e',2)), \
+	FST::NODE()
+
+#define GRAPH_IF 3,    \
+	FST::NODE(1, FST::RELATION('i',1)),	\
+	FST::NODE(1, FST::RELATION('f',2)),	\
+	FST::NODE()
+
 #define GRAPH_NUM_LITERAL 2, \
 	FST::NODE(10,FST::RELATION('0',1),FST::RELATION('1',1), \
 				FST::RELATION('3',1),FST::RELATION('2',1), \
@@ -175,6 +185,7 @@
 	FST::NODE(1,FST::RELATION('n',5)), \
 	FST::NODE()
 
+
 #define GRAPH_NUM 4, \
 	FST::NODE(1,FST::RELATION('n',1)), \
 	FST::NODE(1,FST::RELATION('u',2)), \
@@ -212,7 +223,6 @@
 	FST::NODE(1, FST::RELATION('t', 4)), \
 	FST::NODE(1, FST::RELATION('e', 5)), \
 	FST::NODE()
-
 
 
 #define GRAPH_ID 2, \

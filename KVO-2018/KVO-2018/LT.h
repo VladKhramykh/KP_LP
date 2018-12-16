@@ -12,7 +12,8 @@
 #define	LEX_ID			'i'			// Индентификатор
 #define	LEX_LITERAL		'l'			// Литерал
 #define	LEX_FUNCTION	'f'			// Функция
-#define	LEX_DEF		    'd'			// Def
+#define LEX_IF          'u'			// if
+#define	LEX_DEF		    'd'			// Init
 #define LEX_STANDART    'B'         // Объявления встроенной библиотеки
 #define LEX_STRLEN      'e'         // Встроенная библиотека strlen
 #define LEX_SUBSTR      's'         // Встроенная библиотека substr
@@ -31,6 +32,7 @@
 #define	LEX_STAR		'*'			// *
 #define	LEX_DIRSLASH	'/'			// /
 #define	LEX_EQUAL		'='			// =
+#define	LEX_NOT_EQUALS	'n'			// !=
 #define	LEX_TYPE_NUM	    "num"	
 #define	LEX_TYPE_STR	    "str"	
 #define LEX_TYPE_DOUBLE		"double"
@@ -39,6 +41,8 @@
 #define LEX_TYPE_PARAMETR	"parametr"	
 #define LEX_TYPE_LITERAL	"literal"
 #define LEX_TYPE_STANDART	"vstroen"
+#define LEX_TYPE_EQUALS		"="
+#define LEX_TYPE_NOT_EQUALS	"ne"
 
 
 namespace LT

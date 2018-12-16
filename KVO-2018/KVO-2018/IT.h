@@ -3,13 +3,13 @@
 #define TI_MAXSIZE		4096		//макс число количество строк в таблице идентификаторов
 #define TI_INT_DEFAULT	0		//значение по умолчанию для int
 #define TI_DOUBLE_DEFAULT  0
-#define TI_STR_DEFAULT	NULL		//значение по умолчанию для sting
+#define TI_STR_DEFAULT	NULL		//значение по умолчанию для string
 #define TI_NULLIDX		0xffffffff	//нет элемента таблицы идентификаторов
 #define TI_STR_MAXSIZE	255         //максимально допустимая длина строки
 #define INT_MAXSIZE     65536       //максимально допустимое значение
-#define INT_MINUS_MAXSIZE   -65536  //минимально допустимое значение
+#define INT_MINUS_MAXSIZE   0  //минимально допустимое значение
 #define DOUBLE_MAXSIZE     1048576       //максимально допустимое значение
-#define DOUBLE_MINUS_MAXSIZE   -1048576  //минимально допустимое значение
+#define DOUBLE_MINUS_MAXSIZE   0  //минимально допустимое значение
 
 
 namespace IT

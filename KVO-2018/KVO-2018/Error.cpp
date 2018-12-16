@@ -47,11 +47,12 @@ namespace Error
 		ERROR_ENTRY_NODEF100(200), ERROR_ENTRY_NODEF100(300), ERROR_ENTRY_NODEF100(400), ERROR_ENTRY_NODEF100(500),
 		ERROR_ENTRY(600, "[Синтаксическая] Неверная структура программы"),
 		ERROR_ENTRY(601, "[Синтаксическая] Ошибка в операторах"),
-		ERROR_ENTRY(602, "[Синтаксическая] Ошибка в выражении"),
-		ERROR_ENTRY(603, "[Синтаксическая] Ошибка в параметрах функции"),
+		ERROR_ENTRY(602, "[Синтаксическая] Ошибка в выражении"),		
+		ERROR_ENTRY(603, "[Синтаксическая] Ошибка в параметрах функции"),		
 		ERROR_ENTRY(604, "[Синтаксическая] Ошибка в конструкции функции"),
-		ERROR_ENTRY(605, "[Синтаксическая] Ошибка в принимаемых параметрах функции"),ERROR_ENTRY_NODEF10(610),
-		ERROR_ENTRY_NODEF10(620),ERROR_ENTRY_NODEF10(630),ERROR_ENTRY_NODEF10(640),
+		ERROR_ENTRY(605, "[Семантическая] В if не может использоваться переменная, которой не присвоено значение"),
+		ERROR_ENTRY(606, "[Семантическая] Параметр не определен (использование в if невозможно!)"),
+		ERROR_ENTRY(620),ERROR_ENTRY_NODEF10(630),ERROR_ENTRY_NODEF10(640),
 		ERROR_ENTRY_NODEF10(650),ERROR_ENTRY_NODEF10(660),ERROR_ENTRY_NODEF10(670),ERROR_ENTRY_NODEF10(680),ERROR_ENTRY_NODEF10(690),
 		ERROR_ENTRY_NODEF100(700), ERROR_ENTRY_NODEF100(800),ERROR_ENTRY_NODEF100(900)
 	};
