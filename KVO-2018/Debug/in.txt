@@ -1,0 +1,21 @@
+STANDART;
+num function sum(num a, num b, num c)
+{
+init num result;
+result = (a+b)*c*b;
+write (result);
+back result;
+}
+
+glavn
+{
+init num first=5;
+init str message="sdgh";
+init num second=14;
+
+write(message);
+write(second);
+write(first);
+
+back 0;
+}

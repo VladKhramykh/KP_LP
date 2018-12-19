@@ -223,6 +223,7 @@ namespace LeX
 													}
 													l += 2;
 												}
+												
 												if (!strcmp(InStruct.tokens[i + 1].token, "strlen"))
 												{
 													

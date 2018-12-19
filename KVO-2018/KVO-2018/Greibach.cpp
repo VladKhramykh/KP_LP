@@ -27,11 +27,12 @@ namespace GRB
 			Rule::Chain(4, TS('i'), TS('='), NS('E'), TS(';')),
 			Rule::Chain(3, TS('b'), NS('E'), TS(';'))
 		),
-		Rule(NS('E'), GRB_ERROR_SERIES + 2, 19, // выражения
+		Rule(NS('E'), GRB_ERROR_SERIES + 2, 20, // выражения
 			Rule::Chain(1, TS('i')),
 			Rule::Chain(1, TS('l')),
 			Rule::Chain(3, TS('i'), TS('n'), TS('l')),
 			Rule::Chain(3, TS('i'), TS('='), TS('l')),	
+			Rule::Chain(3, TS('i'), TS('('), TS(')')),
 			Rule::Chain(2, TS('i'), NS('M')),
 			Rule::Chain(2, TS('i'), NS('E')),
 			Rule::Chain(2, TS('l'), NS('M')),
@@ -66,7 +67,7 @@ namespace GRB
 		)
 	);
 
-	Rule::Chain::Chain(short psize, GRBALPHABET s, ...)  //конструктор цепочки - праыой части правила(кол-во символов в цепочке, терминал или нетерминал...)
+	Rule::Chain::Chain(short psize, GRBALPHABET s, ...)  //конструктор цепочки - правой части правила(кол-во символов в цепочке, терминал или нетерминал...)
 	{
 		nt = new GRBALPHABET[size = psize];    //цепочка терминалов
 		int*p = (int*)&s;     //присваиваем символ указателю п

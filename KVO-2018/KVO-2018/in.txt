@@ -1,9 +1,9 @@
 STANDART;
 
-num function sum(num a,num b,num c)
+num function sum(num a, num b, num c)
 {
 init num result;
-result = (a+b)*c*b;
+result=(a+b)*c*b;
 write (result);
 back result;
 }
@@ -12,14 +12,33 @@ glavn
 {
 init num first;
 init str message;
-init num nbr = 12;
-init num second = 5*3;
-init str res;
-message = "Hello World";
-
-first = strlen(message);
-res = substr(message,2,4);
+init num second;
+init num k=3;
+init str s="str";
+init double d;
+init double o;
+init num rez;
+first=14;
+second=2;
+message="Hello World";
+init str stroka = "opa f5";
+init num q=strlen(message);
+init str sb;
+sb=substr(message,1,2);
+rez=sum(k,first,second);
+d=45;
+write(d);
+o=stepen(second,first);
+if(k ne 14)
+{
+write("k ne ravno 14");
+}
+write(o);
+write(message);
+write(rez);
+write(k);
+write(s);
 write(first);
+
 back 0;
 }
-

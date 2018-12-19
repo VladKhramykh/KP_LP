@@ -2,7 +2,7 @@
 #include "Generation.h"
 
 
-ofstream outfile("Java_KP\\src\\GenJava.java");
+ofstream outfile("G:\\св╗аю\\KVO-2018\\KVO-2018\\KVO-2018\\Java_KP\\src\\GenJava.java");
 bool isFunction = false;
 bool isMain = false;
 int idFunc;
@@ -178,22 +178,25 @@ void Generation(LT::LexTable &Lextable, In::StToken *tokens, IT::IdTable &idtabl
 		{
 			if (tokens[i].isLiteral ==true)
 			{
-				if (tokens[i].isStr == true)
-					outfile << tokens[i].token; 
+				if (tokens[i].isStr == true) {
+					outfile << tokens[i].token;
+					cout << tokens[i].token << '\n';
+				}
 				else
 				{
-					int tp;
-					tp = atoi(tokens[i].token);
-					if (tp > INT_MAXSIZE)
+					char* tp;
+					tp = tokens[i].token;
+					if (atoi(tp) > INT_MAXSIZE)
 					{
 						throw ERROR_THROW(6);
 					}
 					else
 					{
-						if (tp < INT_MIN)
+						if (atoi(tp) < INT_MIN)
 							throw ERROR_THROW(6);
 					}
 					outfile << tp;
+					//cout << tokens[i].token << '\n';
 					break;
 				}
 			}
